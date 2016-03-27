@@ -24,6 +24,7 @@ Checks if a String is empty ("") or null.
  
 **Parameters:**
 str - the String to check, may be null
+
 **Returns:**
 true if the String is empty or null 
 
@@ -39,6 +40,7 @@ Checks if a String is not empty ("") and not null.
  
 **Parameters:**
 str - the String to check, may be null
+
 **Returns:**
 true if the String is not empty and not null
 
@@ -54,6 +56,7 @@ Checks if a String is whitespace, empty ("") or null.
 
 **Parameters:**
 str - the String to check, may be null
+
 **Returns:**
 true if the String is null, empty or whitespace
 
@@ -69,6 +72,7 @@ Checks if a String is not empty (""), not null and not whitespace only.
 
 **Parameters:**
 str - the String to check, may be null
+
 **Returns:**
 true if the String is not empty and not null and not whitespace
 
@@ -85,6 +89,7 @@ Removes control characters (char <= 32) from both ends of this String, handling 
  
 **Parameters:**
 str - the String to clean, may be null
+
 **Returns:**
 the trimmed text, never null
 
@@ -103,6 +108,7 @@ The String is trimmed using String.trim(). Trim removes start and end characters
 
 **Parameters:**
 str - the String to be trimmed, may be null
+
 **Returns:**
 the trimmed string, null if null String input
 
@@ -118,6 +124,7 @@ Removes control characters (char <= 32) from both ends of this String returning 
 
 **Parameters:**
 str - the String to be trimmed, may be null
+
 **Returns:**
 the trimmed String, null if only chars <= 32, empty or null String input
 
@@ -132,6 +139,7 @@ Removes control characters (char <= 32) from both ends of this String returning 
      StringUtils.trimToEmpty("    abc    ") = "abc"
 **Parameters:**
 str - the String to be trimmed, may be null
+
 **Returns:**
 the trimmed String, or an empty String if null input
 
@@ -154,5 +162,6 @@ Replaces all occurrences of a String within another String.
 text - text to search and replace in, may be null
 searchString - the String to search for, may be null
 replacement - the String to replace it with, may be null
+
 **Returns:**
 the text with any replacements processed, null if null String input
