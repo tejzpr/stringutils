@@ -1,2 +1,2 @@
 # stringutils
-A JavaScript clone of Apache's Java StringUtils, using TypeScript
+A JavaScript clone of Apache's Java StringUtils, implemented using TypeScript
