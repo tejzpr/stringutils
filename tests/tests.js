@@ -1,3 +1,19 @@
+QUnit.test( "isEmpty", function( assert ) {
+	assert.equal( true, su.isEmpty(null));
+	assert.equal( true, su.isEmpty(""));
+	assert.equal( false,su.isEmpty(" "));
+	assert.equal( false,su.isEmpty("bob"));
+	assert.equal( false,su.isEmpty("  bob  "));
+});
+
+QUnit.test( "isNotEmpty", function( assert ) {
+	assert.equal( false, su.isNotEmpty(null));
+	assert.equal( false, su.isNotEmpty(""));
+	assert.equal( true,su.isNotEmpty(" "));
+	assert.equal( true,su.isNotEmpty("bob"));
+	assert.equal( true,su.isNotEmpty("  bob  "));
+});
+
 QUnit.test( "isBlank", function( assert ) {
 	assert.equal( true, su.isBlank(null));
 	assert.equal( true, su.isBlank(""));
